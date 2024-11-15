@@ -83,8 +83,6 @@ sudo rm /etc/nginx/sites-available/default
 sudo ln -s /etc/nginx/sites-available/mywordpresssite /etc/nginx/sites-enabled/
 sudo ln -s /etc/nginx/sites-available/ssl /etc/nginx/sites-enabled/
 
-echo "copy ssl.key and ssl.pem to the /etc/ssl directory "
+echo "you need to copy ssl.key and ssl.pem to the /etc/ssl directory "
 
-sudo cp ./ssl.key /etc/ssl
-sudo cp ./ssl.pem /etc/ssl
 
