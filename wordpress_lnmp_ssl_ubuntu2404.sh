@@ -44,7 +44,8 @@ server {
     listen [::]:80 default_server;
 
     server_name localhost;
-    rewrite ^(.*)$ https://$host$1 permanent;
+    #rewrite ^(.*)$ https://$host$1 permanent;
+    return 301 https://$host$request_uri;
 }
 EOF
 
