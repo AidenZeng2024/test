@@ -78,7 +78,7 @@ ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;
 }
 EOF
 
-sudo rm /etc/nginx/sites-available/default
+sudo rm /etc/nginx/sites-enabled/default
 # Enable the Nginx site and reload the configuration
 sudo ln -s /etc/nginx/sites-available/mywordpresssite /etc/nginx/sites-enabled/
 sudo ln -s /etc/nginx/sites-available/ssl /etc/nginx/sites-enabled/
