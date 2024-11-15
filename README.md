@@ -9,9 +9,9 @@
 2. sudo chmod a+x wordpress_lnmp_ssl_ubuntu204.sh
 3. sudo sh wordpress_lnmp_ssl_ubuntu204.sh
 4. change SSL certificate file to ssl.key and ssl.pem
->wordpress_lnmp_ssl_ubuntu204.sh ssl.key ssl.pem  must be in the same directory
 5. sudo sh wordpress_lnmp_ssl_ubuntu204.sh
-6. sudo nginx -t
+6. copy ssl.key and ssl.pem to /etc/ssl
+7. sudo nginx -t
 >check ssl conf syntax,if OK restart nginx
 7. sudo systemctl reload nginx
 
